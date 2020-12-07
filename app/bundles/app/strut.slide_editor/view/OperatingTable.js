@@ -114,6 +114,7 @@ function(Backbone, empty, ComponentFactory, GlobalEvents, Component,
 					if (components.length) {
 						e.clipboardData.setData('text/json', JSON.stringify(components));
 						self.model.remove(components);
+						e.preventDefault()
 					}
 				}
 			},
