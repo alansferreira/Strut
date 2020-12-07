@@ -6,17 +6,17 @@ function(mousetrap, Backbone) {
 		pressed: mousetrap.pressed
 	}, Backbone.Events);
 
-	mousetrap.bind(['ctrl+x', 'command+x'], function(e) {
-		result.trigger('cut', e);
-	});
+	// mousetrap.bind(['ctrl+x', 'command+x'], function(e) {
+	// 	result.trigger('cut', e);
+	// });
 
-	mousetrap.bind(['ctrl+c', 'command+c'], function(e) {
-		result.trigger('copy', e);
-	});
-
-	mousetrap.bind(['ctrl+v', 'command+v'], function(e) {
-		result.trigger('paste', e);
-	});
+	// mousetrap.bind(['ctrl+c', 'command+c'], function(e) {
+	// 	result.trigger('copy', e);
+	// });
+	
+// mousetrap.bind(['ctrl+v', 'command+v'], function(e) {
+	// 	result.trigger('paste', e);
+	// });	
 
 	mousetrap.bind(['del', 'command+backspace'], function(e) {
 		result.trigger('delete', e);
