@@ -1,6 +1,9 @@
 {
   "name": "Strut",
   "version": "0.4.0",
+  "scripts": {
+    "start": "grunt server"
+  },
   "devDependencies": {
     "grunt": "~1.0.3",
     "grunt-contrib-clean": "~1.1.0",
